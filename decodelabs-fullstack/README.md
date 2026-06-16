@@ -1,15 +1,14 @@
-# DecodeLabs Full Stack Task Manager
-### Batch 2026 · Project 1 + 2 + 3 Combined
+# Full Stack Task Manager
 
 ---
 
 ## Project Overview
 
-| Project | Phase | Focus |
-|---------|-------|-------|
-| **Project 1** | Interface | Responsive Frontend (HTML / CSS / JS) |
-| **Project 2** | Integration | Backend REST API (Express.js) |
-| **Project 3** | Persistence | Database Integration (CRUD + Schema) |
+| Phase | Focus |
+|-------|-------|
+| Interface | Responsive Frontend (HTML / CSS / JS) |
+| Integration | Backend REST API (Express.js) |
+| Persistence | Database Integration (CRUD + Schema) |
 
 ---
 
@@ -193,7 +192,7 @@ curl -X DELETE http://localhost:3000/api/tasks/6
 
 ---
 
-## Database Schema (Project 3)
+## Database Schema
 
 The schema is enforced in `db/database.js` via constraint validators
 that mirror real SQL `CHECK`, `NOT NULL`, and `DEFAULT` clauses:
@@ -213,7 +212,7 @@ CREATE TABLE tasks (
 );
 ```
 
-### CRUD → HTTP → SQL Mapping (Project 3)
+### CRUD → HTTP → SQL Mapping
 
 | CRUD     | HTTP Method | Endpoint        | SQL Statement              |
 |----------|-------------|-----------------|----------------------------|
@@ -227,7 +226,7 @@ SQL strings, preventing SQL injection entirely (Project 3 — Pillar 4: The Shie
 
 ---
 
-## Design System (Project 1)
+## Design System
 
 | Token          | Hex       | Usage                          |
 |----------------|-----------|--------------------------------|
@@ -243,7 +242,7 @@ SQL strings, preventing SQL injection entirely (Project 3 — Pillar 4: The Shie
 
 ## Features Implemented
 
-### Project 1 — Responsive Frontend ✅
+###  Responsive Frontend 
 - Semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<article>`)
 - Mobile-first CSS Grid + Flexbox layout
 - `clamp()` fluid typography
@@ -260,7 +259,7 @@ SQL strings, preventing SQL injection entirely (Project 3 — Pillar 4: The Shie
 - Hamburger nav for mobile
 - Graceful offline fallback (mock data when API is down)
 
-### Project 2 — Backend API ✅
+### Backend API 
 - Express.js RESTful server on port 3000
 - `GET`, `POST`, `PUT`, `DELETE` endpoints for `/api/tasks`
 - JSON body parsing middleware
@@ -271,7 +270,7 @@ SQL strings, preventing SQL injection entirely (Project 3 — Pillar 4: The Shie
 - `/api/health` endpoint
 - Global error handler
 
-### Project 3 — Database Integration ✅
+### Database Integration
 - Schema designed with PK, NOT NULL, CHECK, DEFAULT, timestamps
 - Parameterized queries on all four CRUD operations
 - `CHECK` constraint enforcement before every write
@@ -283,4 +282,3 @@ SQL strings, preventing SQL injection entirely (Project 3 — Pillar 4: The Shie
 
 ---
 
-*DecodeLabs · Batch 2026 · Full Stack Development Industrial Training*
