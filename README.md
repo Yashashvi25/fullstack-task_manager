@@ -15,7 +15,7 @@
 ## Folder Structure
 
 ```
-decodelabs-fullstack/
+fullstack-task_manager/
 ├── frontend/                     ← Project 1: Responsive Frontend
 │   ├── index.html                ← Semantic HTML5 with landmark elements
 │   ├── css/
