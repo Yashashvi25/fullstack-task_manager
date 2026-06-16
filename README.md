@@ -63,10 +63,7 @@ Expected output — **no errors**, just:
 added 63 packages, found 0 vulnerabilities
 ```
 
-> **Why no errors now?**  
-> The previous attempt failed because `better-sqlite3` requires Visual Studio
-> C++ build tools to compile native code. This version uses a **pure JavaScript
-> store** instead — identical CRUD interface, no compilation needed.
+
 
 ---
 
