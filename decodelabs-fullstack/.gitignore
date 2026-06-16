@@ -1,0 +1,32 @@
+# ── Node.js ──────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ── Database / Runtime data ───────────────
+backend/db/tasks_data.json
+backend/db/*.db
+backend/db/*.sqlite
+backend/db/*.sqlite3
+
+# ── Environment variables (NEVER commit) ──
+.env
+.env.local
+.env.development
+.env.production
+.env.*
+
+# ── OS junk ──────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor folders ────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Build outputs ─────────────────────────
+dist/
+build/
